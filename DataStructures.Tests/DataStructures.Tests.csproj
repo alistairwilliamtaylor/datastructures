@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="LinkedList" />
+      <Folder Include="Queue" />
+      <Folder Include="Stack" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DataStructures.Exercises\DataStructures.Exercises.csproj" />
+      <ProjectReference Include="..\DataStructures.Solution\DataStructures.Solution.csproj" />
+    </ItemGroup>
+
+</Project>
