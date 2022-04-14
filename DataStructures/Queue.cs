@@ -1,6 +1,8 @@
+using System;
+
 namespace DataStructures;
 
-public class Queue
+public class Queue 
 {
     private int Size { get; }
     private int[] _queueArray;
