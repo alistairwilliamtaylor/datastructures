@@ -53,17 +53,7 @@ public class Queue<T> : IQueue<T>
         throw new NotImplementedException();
     }
 
-    public int EnsureCapacity(int capacity)
-    {
-        throw new NotImplementedException();
-    }
-
     public T Peek()
-    {
-        throw new NotImplementedException();
-    }
-
-    public void TrimExcess()
     {
         throw new NotImplementedException();
     }

@@ -58,16 +58,6 @@ public class Stack<T> : IStack<T>
         throw new NotImplementedException();
     }
 
-    public int EnsureCapacity(int capacity)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void TrimExcess()
-    {
-        throw new NotImplementedException();
-    }
-
     public bool TryPeek(out T result)
     {
         throw new NotImplementedException();

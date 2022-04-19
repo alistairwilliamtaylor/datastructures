@@ -28,9 +28,4 @@
       <ProjectReference Include="..\DataStructures.Shared\DataStructures.Shared.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Queue" />
-      <Folder Include="Stack" />
-    </ItemGroup>
-
 </Project>

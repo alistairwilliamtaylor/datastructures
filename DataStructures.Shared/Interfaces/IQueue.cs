@@ -1,4 +1,6 @@
-﻿namespace DataStructures.Queue;
+﻿using DataStructures.Shared.Interfaces;
+
+namespace DataStructures.Queue;
 
 public interface IQueue<T> : ICollection<T>
 {
@@ -14,13 +16,6 @@ public interface IQueue<T> : ICollection<T>
     /// </summary>
     /// <param name="item">The object to add to the IQueue&lt;T&gt;. The value can be null for reference types.</param>
     public void Enqueue(T item);
-    
-    /// <summary>
-    /// Ensures that the capacity of this queue is at least the specified capacity. If the current capacity is less than capacity, it is successively increased to twice the current capacity until it is at least the specified capacity.
-    /// </summary>
-    /// <param name="capacity">The minimum capacity to ensure.</param>
-    /// <returns>The new capacity of this queue.</returns>
-    public int EnsureCapacity(int capacity);
 
     /// <summary>
     /// Returns the object at the beginning of the IQueue&lt;T&gt; without removing it.
@@ -28,12 +23,7 @@ public interface IQueue<T> : ICollection<T>
     /// <returns>The object at the beginning of the IQueue&lt;T&gt;.</returns>
     /// <exception cref="InvalidOperationException">The IQueue&lt;T&gt; is empty.</exception>
     public T Peek();
-    
-    /// <summary>
-    /// Sets the capacity to the actual number of elements in the IQueue&lt;T&gt;, if that number is less than 90 percent of current capacity.
-    /// </summary>
-    public void TrimExcess();
-    
+
     /// <summary>
     /// Removes the object at the beginning of the IQueue&lt;T&gt;, and copies it to the result parameter.
     /// </summary>
