@@ -13,4 +13,8 @@
       <Folder Include="Stack" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DataStructures.Shared\DataStructures.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

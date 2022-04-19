@@ -4,11 +4,6 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>DataStructures</RootNamespace>
     </PropertyGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\DataStructures.Shared\DataStructures.Shared.csproj" />
-    </ItemGroup>
 
 </Project>

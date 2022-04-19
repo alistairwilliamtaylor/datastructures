@@ -25,6 +25,7 @@
     <ItemGroup>
       <ProjectReference Include="..\DataStructures.Exercises\DataStructures.Exercises.csproj" />
       <ProjectReference Include="..\DataStructures.Solutions\DataStructures.Solutions.csproj" />
+      <ProjectReference Include="..\DataStructures.Shared\DataStructures.Shared.csproj" />
     </ItemGroup>
 
     <ItemGroup>
