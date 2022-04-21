@@ -137,6 +137,24 @@ public abstract class ListTests : GeneralTests.CollectionTests
     }
     
     [Fact]
+    public void Insert_InsertsElementAtCorrectIndex_WhenEmpty()
+    {
+        _list.Insert(0, IntGenerator.First);
+        
+        Assert.Equal(IntGenerator.First, _list[0]);
+    }
+    
+    [Fact]
+    public void Insert_InsertsElementAtCorrectIndex_WhenIndexIsEqualToLength()
+    {
+        AddElements(3);
+        
+        _list.Insert(3, IntGenerator.Fourth);
+        
+        Assert.Equal(IntGenerator.Fourth, _list[3]);
+    }
+    
+    [Fact]
     public void Insert_ThrowsException_WhenIndexIsOutOfRange_Positive()
     {
         AddElements(3);
