@@ -8,12 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="LinkedList" />
-      <Folder Include="Queue" />
-      <Folder Include="Stack" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\DataStructures.Shared\DataStructures.Shared.csproj" />
     </ItemGroup>
 
