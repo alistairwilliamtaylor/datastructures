@@ -2,12 +2,12 @@ using System.Collections;
 
 namespace DataStructures.Solutions.LinkedList;
 
-public class LinkedLisEnumerator<T> : IEnumerator<T>
+public class LinkedListEnumerator<T> : IEnumerator<T>
 {
     private Node<T>? _head;
     private Node<T>? _currentNode;
 
-    public LinkedLisEnumerator(Node<T> head)
+    public LinkedListEnumerator(Node<T> head)
     {
         _head = head;
     }

@@ -11,7 +11,7 @@ public class LinkedList<T> : IList<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        return new LinkedLisEnumerator<T>(_head);
+        return new LinkedListEnumerator<T>(_head);
     }
 
     IEnumerator IEnumerable.GetEnumerator()
