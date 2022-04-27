@@ -1,8 +1,9 @@
 using System.Collections;
+using DataStructures.Stack;
 
 namespace DataStructures.Solutions.Stack;
 
-public class Stack<T> : IEnumerable
+public class Stack<T> : IStack<T>
 {
     private LinkedList.LinkedList<T> _stack = new();
 
@@ -16,34 +17,7 @@ public class Stack<T> : IEnumerable
         return GetEnumerator();
     }
 
-    public void Add(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Clear()
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Contains(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void CopyTo(T[] array, int arrayIndex)
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Remove(T item)
-    {
-        throw new NotImplementedException();
-    }
-
     public int Count => _stack.Count;
-
-    public bool IsReadOnly => false;
     
     public T Peek()
     {

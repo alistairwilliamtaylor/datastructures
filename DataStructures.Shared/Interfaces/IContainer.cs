@@ -1,6 +1,8 @@
-﻿namespace DataStructures.Shared.Interfaces;
+﻿using System.Collections;
 
-public interface IContainer<T> : ICollection<T>
+namespace DataStructures.Shared.Interfaces;
+
+public interface IContainer : ICollection
 {
     /// <summary>
     /// Ensures that the capacity of this queue is at least the specified capacity. If the current capacity is less than capacity, it is successively increased to twice the current capacity until it is at least the specified capacity.

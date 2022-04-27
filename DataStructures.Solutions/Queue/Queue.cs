@@ -18,34 +18,7 @@ public class Queue<T> : IQueue<T>
         return GetEnumerator();
     }
 
-    public void Add(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void Clear()
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Contains(T item)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void CopyTo(T[] array, int arrayIndex)
-    {
-        throw new NotImplementedException();
-    }
-
-    public bool Remove(T item)
-    {
-        throw new NotImplementedException();
-    }
-
     public int Count => _queue.Count;
-
-    public bool IsReadOnly => false;
     
     public T Dequeue()
     {
