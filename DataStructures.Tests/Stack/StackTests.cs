@@ -218,7 +218,7 @@ public class StackTests : EnumerableTests
         var success = _stack.TryPeek(out var result);
         
         Assert.True(success);
-        Assert.Equal(IntGenerator.First, result);
+        Assert.Equal(IntGenerator.Third, result);
     }
     
     [Fact]
