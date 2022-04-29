@@ -5,11 +5,11 @@ namespace DataStructures.Solutions.Stack;
 
 public class Stack<T> : IStack<T>
 {
-    private LinkedList.LinkedList<T> _stack = new();
+    private readonly LinkedList.LinkedList<T> _stack = new();
 
     public IEnumerator<T> GetEnumerator()
     {
-        throw new NotImplementedException();
+        return new StackEnumerator<T>(_stack);
     }
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -21,11 +21,17 @@ public class Stack<T> : IStack<T>
     
     public T Peek()
     {
+        if (Count == 0)
+            throw new InvalidOperationException();
+        
         return _stack[^1];
     }
 
     public T Pop()
     {
+        if (Count == 0)
+            throw new InvalidOperationException();
+        
         var lastIndex = Count - 1;
         var poppedItem = _stack[lastIndex];
         _stack.RemoveAt(lastIndex);
@@ -45,7 +51,7 @@ public class Stack<T> : IStack<T>
             result = Peek();
             return true;
         }
-        catch (ArgumentOutOfRangeException)
+        catch (InvalidOperationException)
         {
             result = default!;
             return false;
@@ -59,7 +65,7 @@ public class Stack<T> : IStack<T>
             result = Pop();
             return true;
         }
-        catch (ArgumentOutOfRangeException)
+        catch (InvalidOperationException)
         {
             result = default!;
             return false;

@@ -1,5 +1,6 @@
 using System.Collections;
 using DataStructures.Queue;
+using DataStructures.Solutions.LinkedList;
 
 namespace DataStructures.Solutions.Queue;
 
@@ -10,7 +11,7 @@ public class Queue<T> : IQueue<T>
 
     public IEnumerator<T> GetEnumerator()
     {
-        throw new NotImplementedException();
+        return _queue.GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -24,24 +25,23 @@ public class Queue<T> : IQueue<T>
     {
         if (_queue.Count == 0)
             throw new InvalidOperationException();
-
-        var lastIndex = _queue.Count - 1;
-        var dequeuedItem = _queue[lastIndex];
-        _queue.RemoveAt(lastIndex);
+        
+        var dequeuedItem = _queue[0];
+        _queue.RemoveAt(0);
         
        return dequeuedItem;
     }
 
     public void Enqueue(T item)
     {
-        if (_queue.Count == 0)
-            _queue.Add(item);
-        else
-            _queue.Insert(0, item);
+        _queue.Add(item);
     }
 
     public T Peek()
     {
+        if (Count == 0)
+            throw new InvalidOperationException();
+        
         return _queue[0];
     }
 
@@ -66,7 +66,7 @@ public class Queue<T> : IQueue<T>
             result = Peek();
             return true;
         }
-        catch (ArgumentOutOfRangeException)
+        catch (InvalidOperationException)
         {
             result = default!;
             return false;
