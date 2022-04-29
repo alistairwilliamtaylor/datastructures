@@ -4,10 +4,10 @@ namespace DataStructures.Solutions.LinkedList;
 
 public class LinkedListEnumerator<T> : IEnumerator<T>
 {
-    private Node<T>? _head;
+    private readonly Node<T>? _head;
     private Node<T>? _currentNode;
 
-    public LinkedListEnumerator(Node<T> head)
+    public LinkedListEnumerator(Node<T>? head)
     {
         _head = head;
     }
