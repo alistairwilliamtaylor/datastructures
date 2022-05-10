@@ -1,8 +1,9 @@
-﻿using DataStructures.Shared.Interfaces;
+﻿using System.Collections;
+using DataStructures.Shared.Interfaces;
 
 namespace DataStructures.Queue;
 
-public interface IQueue<T> : ICollection<T>
+public interface IQueue<T> : IEnumerable<T>
 {
     /// <summary>
     /// Removes and returns the object at the beginning of the IQueue&lt;T&gt;.
@@ -37,4 +38,10 @@ public interface IQueue<T> : ICollection<T>
     /// <param name="result">If present, the object at the beginning of the IQueue&lt;T&gt;; otherwise, the default value of T.</param>
     /// <returns><b>true</b> if there is an object at the beginning of the IQueue&lt;T&gt;; <b>false</b> if the IQueue&lt;T&gt; is empty.</returns>
     public bool TryPeek(out T result);
+
+    /// <summary>
+    /// Gets the number of elements contained in the IQueue&lt;T&gt;.
+    /// </summary>
+    /// <returns>The number of elements contained in the IQueue&lt;T&gt;.</returns>
+    public int Count { get; }
 }

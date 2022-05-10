@@ -2,11 +2,11 @@
 
 namespace DataStructures.Tests.GeneralTests;
 
-public class ContainerTests : CollectionTests
+public class ContainerTests
 {
-    private readonly IContainer<int> _container;
+    private readonly IContainer _container;
 
-    protected ContainerTests(IContainer<int> container) : base(container)
+    protected ContainerTests(IContainer container)
     {
         _container = container;
     }
