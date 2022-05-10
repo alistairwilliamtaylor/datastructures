@@ -27,14 +27,14 @@ You can change which implementation is being tested by modifying the constructor
 
 ```csharp
     // Change which implementation is tested by changing the instance passed into this()
-    public LinkedListTests() : this(new DataStructures.LinkedList.LinkedList<int>()) { }
+    public LinkedListTests() : this(new Exercises.LinkedList.LinkedList<int>()) { }
 ```
 
 to:
 
 ```csharp
     // Change which implementation is tested by changing the instance passed into this()
-    public LinkedListTests() : this(new DataStructures.Solutions.LinkedList.LinkedList<int>()) { }
+    public LinkedListTests() : this(new Solutions.LinkedList.LinkedList<int>()) { }
 ```
 
 ## Contributions

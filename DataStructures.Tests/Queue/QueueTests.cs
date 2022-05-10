@@ -8,10 +8,11 @@ namespace DataStructures.Tests.Queue;
 
 public class QueueTests : EnumerableTests
 {
+
     private readonly IQueue<int> _queue;
 
     // Change which implementation is tested by changing the instance passed into this()
-    public QueueTests() : this(new Solutions.Queue.Queue<int>()) { }
+    public QueueTests() : this(new Exercises.Queue.Queue<int>()) { }
 
     #region Private Constructor
 

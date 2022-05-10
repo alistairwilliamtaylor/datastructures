@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using DataStructures.Shared.Interfaces;
-
-namespace DataStructures.Queue;
+﻿namespace DataStructures.Queue;
 
 public interface IQueue<T> : IEnumerable<T>
 {

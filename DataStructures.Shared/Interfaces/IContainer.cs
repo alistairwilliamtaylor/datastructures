@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace DataStructures.Shared.Interfaces;
+namespace DataStructures.Interfaces;
 
 public interface IContainer : ICollection
 {

@@ -11,7 +11,7 @@ public class StackTests : EnumerableTests
     private readonly IStack<int> _stack;
 
     // Change which implementation is tested by changing the instance passed into this()
-    public StackTests() : this(new Solutions.Stack.Stack<int>()) { }
+    public StackTests() : this(new Exercises.Stack.Stack<int>()) { }
 
     #region Private Constructor
 

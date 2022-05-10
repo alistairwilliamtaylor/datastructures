@@ -1,6 +1,7 @@
 ﻿using System.Collections;
+using DataStructures.Queue;
 
-namespace DataStructures.Queue;
+namespace DataStructures.Exercises.Queue;
 
 public class Queue<T> : IQueue<T>
 {

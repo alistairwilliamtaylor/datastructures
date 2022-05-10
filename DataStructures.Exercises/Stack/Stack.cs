@@ -1,6 +1,7 @@
 ﻿using System.Collections;
+using DataStructures.Stack;
 
-namespace DataStructures.Stack;
+namespace DataStructures.Exercises.Stack;
 
 public class Stack<T> : IStack<T>
 {

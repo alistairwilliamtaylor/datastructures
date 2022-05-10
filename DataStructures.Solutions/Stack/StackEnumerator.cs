@@ -1,5 +1,4 @@
 using System.Collections;
-using DataStructures.Solutions.LinkedList;
 
 namespace DataStructures.Solutions.Stack;
 

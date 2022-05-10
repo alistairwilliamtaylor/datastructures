@@ -9,7 +9,7 @@ public class LinkedListTests : ListTests
     private readonly IList<int> _linkedList;
 
     // Change which implementation is tested by changing the instance passed into this()
-    public LinkedListTests() : this(new DataStructures.Solutions.LinkedList.LinkedList<int>()) { }
+    public LinkedListTests() : this(new Exercises.LinkedList.LinkedList<int>()) { }
 
     #region Private Constructor
 

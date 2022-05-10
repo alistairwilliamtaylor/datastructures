@@ -1,6 +1,4 @@
-﻿using DataStructures.Shared.Interfaces;
-
-namespace DataStructures.Stack;
+﻿namespace DataStructures.Stack;
 
 public interface IStack<T> : IEnumerable<T>
 {

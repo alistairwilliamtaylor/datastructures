@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace DataStructures.LinkedList;
+namespace DataStructures.Exercises.LinkedList;
 
 public class LinkedList<T> : IList<T>
 {

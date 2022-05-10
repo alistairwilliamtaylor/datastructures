@@ -1,4 +1,4 @@
-﻿using DataStructures.Shared.Interfaces;
+﻿using DataStructures.Interfaces;
 
 namespace DataStructures.Tests.GeneralTests;
 
