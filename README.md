@@ -12,6 +12,12 @@ This repository contains a collection of exercises which require you to complete
 - Start implementing the methods by replacing the `NotImplementedException` with your code
 - Test your code by running the `DataStructures.Tests` project
 
+## Inlcuded data structures
+
+- Linked List
+- Stack
+- Queue
+
 ## Solutions
 
 **Solutions are located in the `DataStructures.Solutions` project!**
